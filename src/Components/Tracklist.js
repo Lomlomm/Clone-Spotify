@@ -8,7 +8,7 @@ function Tracklist() {
     <div className='trackList'>
         <div className='top'>
             <img src={Album} alt=''/>
-            <p className='trackName'>Sample name <span className='trackSpan'>Artist</span></p>
+            <p className='trackName'>De Paso por lo Eterno<span className='trackSpan'>Rafael Lechowski</span></p>
         </div>
         <div className='bottom'>
             <i><BsVolumeUpFill/></i>
