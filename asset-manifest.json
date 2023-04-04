@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Clone-Spotify/static/css/main.56abf4bc.css",
-    "main.js": "/Clone-Spotify/static/js/main.7fa3b36e.js",
+    "main.js": "/Clone-Spotify/static/js/main.aaaf810d.js",
     "static/js/787.a142c313.chunk.js": "/Clone-Spotify/static/js/787.a142c313.chunk.js",
     "static/media/canto_ala_vida.jpg": "/Clone-Spotify/static/media/canto_ala_vida.c3f7b2e0a15337eca699.jpg",
     "static/media/artist.jpg": "/Clone-Spotify/static/media/artist.38a329e04d7891e9a519.jpg",
     "static/media/verified.png": "/Clone-Spotify/static/media/verified.0bb7fb764700a691d374.png",
     "index.html": "/Clone-Spotify/index.html",
     "main.56abf4bc.css.map": "/Clone-Spotify/static/css/main.56abf4bc.css.map",
-    "main.7fa3b36e.js.map": "/Clone-Spotify/static/js/main.7fa3b36e.js.map",
+    "main.aaaf810d.js.map": "/Clone-Spotify/static/js/main.aaaf810d.js.map",
     "787.a142c313.chunk.js.map": "/Clone-Spotify/static/js/787.a142c313.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56abf4bc.css",
-    "static/js/main.7fa3b36e.js"
+    "static/js/main.aaaf810d.js"
   ]
 }
