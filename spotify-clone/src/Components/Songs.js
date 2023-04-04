@@ -25,20 +25,24 @@ const app = initializeApp(firebase_config);
 
 
 // Create a reference with an initial file path and name
-const storage = getStorage(app, firebase_config.storageBucket);
-const por_amor_al_odio_album = ref(storage, 'gs://spotify-clone-f236d.appspot.com/por_amor_al_odio.jpg')
-const canto_ala_vida_album = ref(storage, 'gs://spotify-clone-f236d.appspot.com/canto_ala_vida.jpg')
-const url_amor_al_odio = getDownloadURL(por_amor_al_odio_album).then((url) => {return url}).catch(err=>console.log(err))
+// const storage = getStorage(app, firebase_config.storageBucket);
+// const por_amor_al_odio_album = ref(storage, 'gs://spotify-clone-f236d.appspot.com/por_amor_al_odio.jpg')
+// const canto_ala_vida_album = ref(storage, 'gs://spotify-clone-f236d.appspot.com/canto_ala_vida.jpg')
 
-const url_canto_a_la_vida = getDownloadURL(canto_ala_vida_album)
 
-const getUrlPAO = async () => {
-    const url = await url_amor_al_odio; 
-    return url
-  };
 
-const url = getUrlPAO();
-console.log(url)
+// const url_amor_al_odio = getDownloadURL(por_amor_al_odio_album)
+// const url_canto_a_la_vida = getDownloadURL(canto_ala_vida_album)
+
+const urlPAO = "https://firebasestorage.googleapis.com/v0/b/spotify-clone-f236d.appspot.com/o/por_amor_al_odio.jpg?alt=media&token=1164ba50-a1c5-4590-ab0f-193a90f1ce01"
+// const getUrlPAO = url_amor_al_odio.then((url) => {
+//     console.log(url)
+// })
+
+const urlCAV = "https://firebasestorage.googleapis.com/v0/b/spotify-clone-f236d.appspot.com/o/canto_ala_vida.jpg?alt=media&token=96120e54-41f7-4b55-b2a0-cc1507143955"
+// const getUrlCAV = url_canto_a_la_vida.then((url) => {
+//     console.log(url)
+// })
 
 const Songs = [
     {
@@ -46,31 +50,31 @@ const Songs = [
         favourite: false, 
         songName: "Por Amor al Odio",
         // Create a reference from a Google Cloud Storage URI
-        imgSrc: url
+        imgSrc: urlPAO
     },
     {
         id: 2, 
         favourite: false, 
         songName: "Artesano del Arte Insano",
-        imgSrc: url_amor_al_odio
+        imgSrc: urlPAO
     },
     {
         id: 3, 
         favourite: false, 
         songName: "Himno de Vivir",
-        imgSrc: url_canto_a_la_vida
+        imgSrc: urlCAV
     }, 
     {
         id: 4, 
         favourite: false, 
         songName: "Donde Duele Inspira 36500 Días (Version Jazz)",
-        imgSrc: url_amor_al_odio
+        imgSrc: urlPAO
     },
     {
         id: 5, 
         favourite: false, 
         songName: "De Paso por lo Eterno (Cancion del extranjero)",
-        imgSrc: url_canto_a_la_vida
+        imgSrc: urlCAV
     },
 ]
 
