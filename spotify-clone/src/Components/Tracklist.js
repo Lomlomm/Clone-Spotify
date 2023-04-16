@@ -2,13 +2,17 @@ import React from 'react'
 import {FaDesktop} from 'react-icons/fa'
 import {BsVolumeUpFill, BsMusicNoteList} from 'react-icons/bs'
 import Album from '../img/canto_ala_vida.jpg'
-
+import { AudioList } from './AudioList'
 function Tracklist() {
+  const inputSlider = document.querySelector("input");
+  inputSlider.oninput = (() =>{
+    let value = inputSlider.value;
+  })
   return (
     <div className='trackList'>
         <div className='top'>
             <img src={Album} alt=''/>
-            <p className='trackName'>De Paso por lo Eterno<span className='trackSpan'>Rafael Lechowski</span></p>
+            <p className='trackName'>{}<span className='trackSpan'>Rafael Lechowski</span></p>
         </div>
         <div className='bottom'>
             <i><BsVolumeUpFill/></i>

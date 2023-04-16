@@ -1,0 +1,43 @@
+.musicPlayer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 575px) {
+    .musicPlayer{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 560px) {
+    .musicPlayer{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+    .musicPlayer{
+        width: 95%;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    .musicPlayer{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+    .musicPlayer{
+        width: 80%;
+    }
+    
+}

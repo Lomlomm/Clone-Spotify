@@ -18,9 +18,13 @@ function Banner() {
             </div>
             <div className='artist'>
                 <div className='left'>
+
+                    <div className='verified'>
+                        <img src={Verified} alt=""/>
+                        <p> Verified Artist</p>
+                    </div>
                     <div className='name'>
                         <h2>Rafael Lechowski</h2>
-                        <img src={Verified} alt=""/>
                     </div>
 
                     <p><i><FaHeadphones/></i>

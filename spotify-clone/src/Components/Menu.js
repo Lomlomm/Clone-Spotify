@@ -16,7 +16,6 @@ function Menu({title, menuObject}) {
     }, []);
   return (
     <div className='MenuContainer'>
-        <p className='Title'>{title}</p>
         <ul>
             {
                 menuObject && menuObject.map((menu) => (

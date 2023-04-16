@@ -28,11 +28,27 @@ const app = initializeApp(firebase_config);
 // const storage = getStorage(app, firebase_config.storageBucket);
 // const por_amor_al_odio_album = ref(storage, 'gs://spotify-clone-f236d.appspot.com/por_amor_al_odio.jpg')
 // const canto_ala_vida_album = ref(storage, 'gs://spotify-clone-f236d.appspot.com/canto_ala_vida.jpg')
-
-
-
 // const url_amor_al_odio = getDownloadURL(por_amor_al_odio_album)
 // const url_canto_a_la_vida = getDownloadURL(canto_ala_vida_album)
+// url_amor_al_odio.then((value) => {
+//     const srcElement = document.createElement('div');
+//     srcElement.innerHTML = value
+//     srcElement.className = 'urlPAO'
+//     srcElement.style.display = "none"
+//     document.body.appendChild(srcElement)
+// })
+
+
+// url_canto_a_la_vida.then((value) => {
+//     const srcElement = document.createElement('div');
+//     srcElement.innerHTML = value
+//     srcElement.className = 'urlCAV'
+//     srcElement.style.display = "none"
+//     document.body.appendChild(srcElement)
+// })
+
+// const urlCAV = document.getElementsByClassName('urlCAV');
+// const urlPAO = document.getElementsByClassName('urlPAO');
 
 const urlPAO = "https://firebasestorage.googleapis.com/v0/b/spotify-clone-f236d.appspot.com/o/por_amor_al_odio.jpg?alt=media&token=1164ba50-a1c5-4590-ab0f-193a90f1ce01"
 // const getUrlPAO = url_amor_al_odio.then((url) => {
@@ -49,31 +65,42 @@ const Songs = [
         id: 1, 
         favourite: false, 
         songName: "Por Amor al Odio",
+        songArtist: "Rafael Lechowski",
         // Create a reference from a Google Cloud Storage URI
+        songSrc: "https://open.spotify.com/track/48MRnIDd36Zp5XxFgYfEHg?si=4e1ac5d7bc9847d6",
         imgSrc: urlPAO
+    
     },
     {
         id: 2, 
         favourite: false, 
         songName: "Artesano del Arte Insano",
+        songArtist: "Rafael Lechowski",
+        songSrc: "https://open.spotify.com/track/7Cw1jx173XCK9kqvGTjG3Q?si=02456b1772314a8f",
         imgSrc: urlPAO
     },
     {
         id: 3, 
         favourite: false, 
         songName: "Himno de Vivir",
+        songArtist: "Rafael Lechowski",
+        songSrc: "https://open.spotify.com/track/104Pyy2BeqCc0j0THlRNLB?si=17fe1123dd884d07",
         imgSrc: urlCAV
     }, 
     {
         id: 4, 
         favourite: false, 
         songName: "Donde Duele Inspira 36500 Días (Version Jazz)",
+        songArtist: "Rafael Lechowski",
+        songSrc: "https://open.spotify.com/track/1DPKz6P8VCpmOV61pkhMDM?si=355e478e44414382",
         imgSrc: urlPAO
     },
     {
         id: 5, 
         favourite: false, 
         songName: "De Paso por lo Eterno (Cancion del extranjero)",
+        songArtist: "Rafael Lechowski",
+        songSrc: "https://open.spotify.com/track/2rZlaN0elkLITXEXMCQTEk?si=3fdf661053db485d",
         imgSrc: urlCAV
     },
 ]

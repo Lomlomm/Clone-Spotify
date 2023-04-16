@@ -5,7 +5,7 @@
     background: rgba(34, 34, 34, 0.6);
     backdrop-filter: blur(10px);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
+    background-image: linear-gradient(rgb(63, 63, 63), rgb(0, 0, 0));
 }
 
 .banner{
@@ -75,13 +75,21 @@
     align-items: center;
 }
 .banner .content .artist .left .name h2{
-    font-size: 50px;
+    font-size: 95px;
 }
 
-.banner .content .artist .left .name img{
-    width: 30px;
-    margin-left: 10px;
-
+.banner .content .artist .left .verified{
+    display: flex;
+    align-items: center; 
+}
+.banner .content .artist .left .verified p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.banner .content .artist .left .verified img{
+    width: 25px;
+    margin-left: 0px;
+    margin-right: 10px;
 }
 .banner .content .artist .left p{
     font-size: 14px;
@@ -213,7 +221,7 @@
 }
 
 .audioList .title{
-    font-size: 18px;
+    font-size: 22px;
     color: #f1f1f1;
 }
 .audioList .title span{ 
@@ -238,6 +246,15 @@
     padding: 5px;
 }
 
+.songs:hover{
+    background-color: #58585836;
+    border-radius: 12px;
+}
+
+.songs.active{
+    background-color: #f1f1f148;
+    border-radius: 12px;
+}
 .songs:hover, 
 .songs.active { 
     color: #f1f1f1;
@@ -252,10 +269,11 @@
     display: flex;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 5px;
     cursor: pointer;
+    height: 65px;
 }
+
 
 .song .imageBox{
     width: 45px;
@@ -308,4 +326,75 @@
 .song .section .hits .favourites i{
     color: #49e12e !important;
     filter: drop-shadow(0px 0px 4px #49e12e);
+}
+@media screen and (max-width: 1450px) {
+    .banner .content .artist .left .name h2{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner .content .artist .right a:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    .song .section .hits {
+        display: none;
+    }
+    .song .section .songName{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .mainContainer{
+        min-width: 380px;
+    }
+
+    .content{
+        padding: 10px 15px;
+    }
+    .banner .content .artist .left .name{
+        width: min-content;
+    }
+
+    .banner .content .artist .left .name h2{
+        font-size: 25px;
+    }
+    .banner .content .artist .left img{
+        margin-left: 0px;
+        width: 15px;
+    }
+
+    .banner .content .artist .right{
+        display: none;
+    }
+
+    .menuList{
+        padding: 5px 5px;
+    }
+
+    .menuList ul li{
+        margin: 0px 10px;
+        padding: 0px 5px;
+    }
+
+
+    .menuList ul{
+        width: 100%;
+    }
+
+    .menuList p{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 400px) {
+    .menuList ul li{
+        margin: 0px 5px;
+        padding: 0px 5px;
+    }
 }
