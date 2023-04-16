@@ -190,6 +190,7 @@
     padding-top: 20px;
 }
 .trackList .top{
+    padding-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -248,7 +249,7 @@ input{
   
 input::-webkit-slider-thumb{
     -webkit-appearance: none;
-    height: 50px;
+    height: 20px;
     width: 10px;
     background: 	#f1f1f1;
     border-radius: 50%;

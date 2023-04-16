@@ -4,10 +4,6 @@ import {BsVolumeUpFill, BsMusicNoteList} from 'react-icons/bs'
 import Album from '../img/canto_ala_vida.jpg'
 import { AudioList } from './AudioList'
 function Tracklist() {
-  const inputSlider = document.querySelector("input");
-  inputSlider.oninput = (() =>{
-    let value = inputSlider.value;
-  })
   return (
     <div className='trackList'>
         <div className='top'>
